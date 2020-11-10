@@ -1,21 +1,21 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.7.1'
+gem 'bootsnap'
 gem 'coffee-rails'
 gem 'jquery-rails'
-gem 'sass-rails', "~> 5.0.0"	
-gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'rails', '5.0.7.1'
+gem 'sass-rails', '~> 5.0.0'
+gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'uglifier'
-gem 'bootsnap'
 
 gem 'sqlite3', '~>1.3.6'
 
 group :development, :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'pry-byebug'
   gem 'rack_session_access'
-  gem "capybara"
-  gem "database_cleaner"
-  gem "pry-byebug"
-  gem "rspec-rails"
+  gem 'rspec-rails'
 end
 
 group :test do
